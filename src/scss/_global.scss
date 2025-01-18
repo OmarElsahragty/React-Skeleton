@@ -1,0 +1,107 @@
+//! -------------------------------------------------------------------------- !//
+//!                                 APPLICATION                                !//
+//! -------------------------------------------------------------------------- !//
+.app {
+  width: 100%;
+  height: 100vh;
+}
+
+//! -------------------------------------------------------------------------- !//
+//!                                    ICONS                                   !//
+//! -------------------------------------------------------------------------- !//
+.icon {
+  margin: 0 0.65rem;
+  font-size: 3.5rem;
+  color: var(--white);
+}
+
+.social-icon {
+  user-select: none;
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.small-icon {
+  margin: 0 0.65rem;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+//! -------------------------------------------------------------------------- !//
+//!                                    LINKS                                   !//
+//! -------------------------------------------------------------------------- !//
+a {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+//! -------------------------------------------------------------------------- !//
+//!                                   INPUTS                                   !//
+//! -------------------------------------------------------------------------- !//
+.input,
+.textarea {
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: var(--black-two);
+  background-color: var(--white);
+  border: solid 0.2rem var(--blue);
+  border-radius: 0.6rem;
+  outline-style: none;
+  resize: none;
+
+  &::placeholder {
+    font-size: 1.8rem;
+    color: var(--dark-gray);
+  }
+}
+
+.input {
+  height: 4.25rem;
+  padding: 0 1.5rem;
+}
+
+.textarea {
+  height: 17.5rem;
+  padding: 1rem 1.5rem;
+}
+
+//! -------------------------------------------------------------------------- !//
+//!                                  ERRORS                                    !//
+//! -------------------------------------------------------------------------- !//
+.invalid-input {
+  border: solid 0.2rem var(--danger);
+}
+
+//! -------------------------------------------------------------------------- !//
+//!                                  BUTTONS                                   !//
+//! -------------------------------------------------------------------------- !//
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+  transition: all 0.25s ease;
+  background-color: var(--blue);
+  color: var(--white);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:not(:disabled):hover {
+    transform: translateY(-0.35rem);
+    box-shadow: 0 0.8rem 1rem var(--black);
+  }
+
+  &:disabled {
+    cursor: default;
+    color: var(--black-two);
+    background-color: var(--gray);
+  }
+}

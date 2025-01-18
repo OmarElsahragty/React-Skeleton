@@ -1,0 +1,6 @@
+@use "scss/variables" as *;
+
+body {
+  font-size: $default_font_size;
+  line-height: 1.5;
+}
